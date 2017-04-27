@@ -19,6 +19,8 @@ actual folder names and other configuration.
 
 ## Instructions
 
+### On Kodi / LibreELEC
+
 1. Install LibreELEC Network Tools add-on to add `rsync`
   1. System
   2. Settings
@@ -28,3 +30,28 @@ actual folder names and other configuration.
   6. Program add-ons
   7. Network Tools
   8. Install
+
+### On macOS
+
+1. Install [homebrew]
+2. Install `sshpass`
+  1. run `brew install sshpass`
+  2. Read the warning!
+    - `We won't add sshpass because it makes it too easy for novice SSH users to ruin SSH's security.`
+  3. Meditate on the warning
+  4. Lookup the latest version of `sshpass`
+    - `latest_sshpass_version=$(curl -ILs -o /dev/null -w %{url_effective} https://sourceforge.net/projects/sshpass/files/latest/download?source=files)`
+    - [source][get_redirect_url]
+  5. Optionally, if you're not familiar/comfortable with `vim`, set your favourite editor in your `EDITOR` environment variable
+    - e.g. `export EDITOR=atom`
+  6. Create your very own Homebrew formula
+    - `brew create $latest_sshpass_version --force` ([source][create_formula])
+    - change `desc ""` into `desc "sshpass"`
+    - change `homepage ""` into `homepage "https://sourceforge.net/projects/sshpass/"`
+    - save the contents of the editor and close it
+  7. run `brew install sshpass`
+
+
+[homebrew]:             https://brew.sh
+[get_redirect_url]:     http://stackoverflow.com/a/3077316
+[create_formula]:       https://gist.github.com/arunoda/7790979#gistcomment-1756013
