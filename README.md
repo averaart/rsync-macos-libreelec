@@ -19,6 +19,11 @@ actual folder names and other configuration.
 
 ## Instructions
 
+So there are some hoops to jump through to get this working, but I've tried to be
+as complete as possible in my descriptions. Hopefully, this means I don't have to
+rediscover everything if and when I ever decide to add more directories or even
+change machines.
+
 ### On Kodi / LibreELEC
 
 Install LibreELEC Network Tools add-on to add `rsync`. Just navigate through the
@@ -74,3 +79,11 @@ following menu items:
 [create_formula]:       https://gist.github.com/arunoda/7790979#gistcomment-1756013
 [symlink_current]:      https://unix.stackexchange.com/a/147796
 [symlink_multiple]:     https://superuser.com/a/633610
+
+
+## Notes
+
+So why the hell did I tell you to install `homebrew` if I only use it to install
+one tool that's not even really supported _by_ `homebrew`? Well, mostly because
+I use homebrew for all my tools and try to avoid installing one-offs to keep things
+nice and predictable.
