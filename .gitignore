@@ -9,3 +9,7 @@ libreelec-password.txt
 
 # but keep the example
 !example.*.plist
+
+# optional log files
+*.stderr
+*.stdout
