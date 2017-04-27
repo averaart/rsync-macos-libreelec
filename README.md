@@ -58,6 +58,8 @@ actual folder names and other configuration.
   - Update the actual password in the file
 6. Create symlink from Application Support to this repository
   - `sudo ln -s "$(pwd)" "/Library/Application Support/nl.andra.rsync-to-kodi"`
+7. Add the Raspberry Pi to the known hosts for `root`
+  - `sudo ssh root@<RASPBERRY-PI-IP>`
 
 [homebrew]:             https://brew.sh
 [get_redirect_url]:     http://stackoverflow.com/a/3077316
