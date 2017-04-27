@@ -3,3 +3,9 @@ notes.txt
 
 # The actual password file should not be committed to the repo
 libreelec-password.txt
+
+# Ignore generated .plist files
+*.plist
+
+# but keep the example
+!*.example.plist

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+		<string>nl.andra.rsync-to-kodi.example</string>
+	<key>ProgramArguments</key>
+	<array>
+		<string>/Library/Application Support/nl.andra.rsync-to-kodi/LaunchDaemons/sync_to_libreelec.sh</string>
+		<string>/path/to/source/directory/</string>
+		<string>root@<RASPBERRY-PI-IP>:/path/to/destination/directory/</string>
+	</array>
+	<key>StandardErrorPath</key>
+		<string>/Library/Application Support/nl.andra.rsync-to-kodi/example.stderr</string>
+	<key>StandardOutPath</key>
+		<string>/Library/Application Support/nl.andra.rsync-to-kodi/example.stdout</string>
+	<key>WatchPaths</key>
+	<array>
+		<string>/path/to/source/directory</string>
+	</array>
+</dict>
+</plist>
