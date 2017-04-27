@@ -14,3 +14,14 @@ actual folder names and other configuration.
 
 - One directional sync: from macOS to LibreELEC
 - Synchronise on change
+
+
+1. Install LibreELEC Network Tools add-on to add `rsync`
+  1. System
+  2. Settings
+  3. Add-ons
+  4. Install from repository
+  5. LibreELEC Add-ons
+  6. Program add-ons
+  7. Network Tools
+  8. Install
