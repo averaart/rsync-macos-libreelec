@@ -8,4 +8,4 @@ libreelec-password.txt
 *.plist
 
 # but keep the example
-!*.example.plist
+!example.*.plist
