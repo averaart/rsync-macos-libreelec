@@ -50,7 +50,14 @@ actual folder names and other configuration.
     - change `homepage ""` into `homepage "https://sourceforge.net/projects/sshpass/"`
     - save the contents of the editor and close it
   7. run `brew install sshpass`
-
+3. Clone this repository (if you haven't already)
+4. cd into this repository
+  - `cd rsync-macos-osx-libreelec-kodi`
+5. Create your own copy of the password file used by `sshpass`
+  - `cp LaunchDaemons/libreelec-password.example.txt LaunchDaemons/libreelec-password.txt`
+  - Update the actual password in the file
+6. Create symlink from Application Support to this repository
+  - `sudo ln -s "$(pwd)" "/Library/Application Support/nl.andra.rsync-to-kodi"`
 
 [homebrew]:             https://brew.sh
 [get_redirect_url]:     http://stackoverflow.com/a/3077316
