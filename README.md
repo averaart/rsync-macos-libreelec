@@ -12,9 +12,12 @@ directories, these directories should be synchronised to the Pi.
 I'll try to keep things as general as possible, using `.gitignore`d files for
 actual folder names and other configuration.
 
+## Goals
+
 - One directional sync: from macOS to LibreELEC
 - Synchronise on change
 
+## Instructions
 
 1. Install LibreELEC Network Tools add-on to add `rsync`
   1. System
