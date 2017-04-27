@@ -21,15 +21,17 @@ actual folder names and other configuration.
 
 ### On Kodi / LibreELEC
 
-1. Install LibreELEC Network Tools add-on to add `rsync`
-  1. System
-  2. Settings
-  3. Add-ons
-  4. Install from repository
-  5. LibreELEC Add-ons
-  6. Program add-ons
-  7. Network Tools
-  8. Install
+Install LibreELEC Network Tools add-on to add `rsync`. Just navigate through the
+following menu items:
+
+1. System
+2. Settings
+3. Add-ons
+4. Install from repository
+5. LibreELEC Add-ons
+6. Program add-ons
+7. Network Tools
+8. Install
 
 ### On macOS
 
