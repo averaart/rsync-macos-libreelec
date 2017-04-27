@@ -17,10 +17,12 @@ cat << EOF > $plist
 		<string>$from/</string>
 		<string>$to</string>
 	</array>
+	<!-- Uncomment these lines to enable logging
 	<key>StandardErrorPath</key>
 		<string>/Library/Application Support/nl.andra.rsync-to-kodi/$label.stderr</string>
 	<key>StandardOutPath</key>
 		<string>/Library/Application Support/nl.andra.rsync-to-kodi/$label.stdout</string>
+	-->
 	<key>WatchPaths</key>
 	<array>
 		<string>$from</string>
