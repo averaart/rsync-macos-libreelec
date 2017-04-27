@@ -57,10 +57,18 @@ actual folder names and other configuration.
   - `cp LaunchDaemons/libreelec-password.example.txt LaunchDaemons/libreelec-password.txt`
   - Update the actual password in the file
 6. Create symlink from Application Support to this repository
-  - `sudo ln -s "$(pwd)" "/Library/Application Support/nl.andra.rsync-to-kodi"`
+  - `sudo ln -s "$(pwd)" "/Library/Application Support/nl.andra.rsync-to-kodi"` ([source][symlink_current])
 7. Add the Raspberry Pi to the known hosts for `root`
   - `sudo ssh root@<RASPBERRY-PI-IP>`
+8. For each directory you wish to Synchronise, generate a .plist file
+  - `./generate_plist.sh "/path/to/source/directory" "root@<RASPBERRY-PI-IP>:/path/to/destination/directory/"`
+9. Symlink all generated .plist files to the `/Library/LaunchDaemons/` directory
+  - `sudo ln -s $(pwd)/nl.andra.rsync-to-kodi.*.plist /Library/LaunchDaemons/` ([source][symlink_multiple])
+10. Set the ownership of the generated .plist files to `root:wheel`
+  - `sudo chown root:wheel /Library/LaunchDaemons/nl.andra.rsync-to-kodi.*.plist`
 
 [homebrew]:             https://brew.sh
 [get_redirect_url]:     http://stackoverflow.com/a/3077316
 [create_formula]:       https://gist.github.com/arunoda/7790979#gistcomment-1756013
+[symlink_current]:      https://unix.stackexchange.com/a/147796
+[symlink_multiple]:     https://superuser.com/a/633610
